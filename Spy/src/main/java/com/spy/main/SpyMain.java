@@ -77,11 +77,9 @@ public class SpyMain extends JFrame {
 	
 	public SpyMain() {
 
-		// https://natgrid-mxtst04.maximo.com/maximo/webclient/login/login.jsp
-		 StartBrowser st = new StartBrowser("https://test.salesforce.com/", "chrome");
-		/*StartBrowser st = new StartBrowser("https://natgrid-mxtst04.maximo.com/maximo/webclient/login/login.jsp",
-				"chrome");
-		*/driver = st.open();
+		
+		 StartBrowser st = new StartBrowser("", "chrome");
+		driver = st.open();
 
 		jframe = new JFrame(Constant.WELCOME_TO_POM_CREATION);
 		// jframe.setPreferredSize(new Dimension(300, 400));
